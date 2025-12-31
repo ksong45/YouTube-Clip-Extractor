@@ -1,0 +1,12 @@
+# dependencies
+backend/node_modules/
+
+# generated files
+backend/clips/
+backend/temp.mp4
+
+# system files
+.DS_Store
+
+# optional
+.env

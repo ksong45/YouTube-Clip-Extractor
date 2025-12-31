@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Clip Extractor</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <h1>YouTube Clip Extractor</h1>
+    <p>Save your favorite YouTube clips in one place.</p>
+  </header>
+
+  <!-- MAIN LAYOUT -->
+  <main class="main-layout">
+
+    <!-- LEFT COLUMN: CLIP CREATION -->
+    <section class="left-panel">
+      <h2>Create a Clip</h2>
+
+      <label>YouTube Video URL</label>
+      <input id="youtubeUrl" type="text" placeholder="https://www.youtube.com/watch?v=jNQXAC9IVRw">
+
+      <div class="time-inputs">
+        <div>
+          <label>Start Time</label>
+          <input
+            id="startTime"
+            type="text"
+            placeholder="MM:SS or HH:MM:SS"
+          />
+        </div>
+
+        <div>
+          <label>End Time</label>
+          <input
+            id="endTime"
+            type="text"
+            placeholder="MM:SS or HH:MM:SS"
+          />
+        </div>
+      </div>
+      
+      <label>Clip Name</label>
+      <input id="clipName" type="text" placeholder="Me_at_the_zoo">
+
+      <button id="clipBtn">Extract Clip</button>
+    </section>
+
+    <!-- RIGHT COLUMN: CLIP LIBRARY -->
+    <section class="right-panel">
+      <div class="clips-header">
+        <h2>Your Clips</h2>
+        <input
+          type="text"
+          id="clipSearch"
+          placeholder="Search"
+          class="search-input"
+        />
+      </div>
+      <ul id="clipsList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
