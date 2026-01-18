@@ -28,6 +28,7 @@ Built as a lightweight, end-to-end tool to paste a YouTube link, choose timestam
   <em>Generated clip ready for download.</em>
 </p>
 
+[Watch demo clip](assets/demo_clip.mp4)
 ---
 
 ## Tech Stack
